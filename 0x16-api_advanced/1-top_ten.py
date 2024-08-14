@@ -12,10 +12,21 @@ def top_ten(subreddit):
     params = {
         "limit": 10
     }
-    response = requests.get(url, headers=headers, params=params,
-                            allow_redirects=False)
+    
+    response = requests.get(url, headers=headers, params=params, allow_redirects=False)
+    
+    # Check if the subreddit exists
     if response.status_code == 404:
         print("None")
         return
-    results = response.json().get("data")
-    [print(c.get("data").get("title")) for c in results.get("children")]
+
+    # Print the status code for debugging
+    print(f"Status code: {response.status_code}")  # Optional for debugging
+
+    # Attempt to parse the JSON response
+    try:
+        results = response.json().get("data")
+        for c in results.get("children"):
+            print(c.get("data").get("title"))
+    except ValueError:
+        print("None")

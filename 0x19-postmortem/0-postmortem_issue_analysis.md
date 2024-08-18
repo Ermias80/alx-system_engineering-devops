@@ -23,3 +23,5 @@ The incident began at 6:20 PM GMT+3 and persisted until 1:10 AM GMT+3 when the d
 The outage was caused by a misconfiguration in the database connection pool, which hindered the web application's ability to connect to the database. The issue was identified by the engineering team through monitoring alerts and resolved by restarting the database server.
 
 # Corrective and Preventative Measures 
+To prevent similar incidents in the future, the following measures will be implemented:
+[x] 1. 

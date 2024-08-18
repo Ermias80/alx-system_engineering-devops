@@ -24,4 +24,4 @@ The outage was caused by a misconfiguration in the database connection pool, whi
 
 # Corrective and Preventative Measures 
 To prevent similar incidents in the future, the following measures will be implemented:
-[x] 1. 
++ 1. 

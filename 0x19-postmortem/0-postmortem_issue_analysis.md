@@ -24,4 +24,4 @@ The outage was caused by a misconfiguration in the database connection pool, whi
 
 # Corrective and Preventative Measures 
 To prevent similar incidents in the future, the following measures will be implemented:
-+ 1. 
++ [x] 1. Investigate the Database Server Failure: A detailed review of server logs and diagnostics will be conducted to understand the cause of the failure.
